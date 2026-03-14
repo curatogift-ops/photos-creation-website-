@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotozHouse | Premium Photo Editing</title>
+    <meta name="description" content="Professional real estate photo editing that helps you sell faster.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div>Professional Real Estate Photo Editing Services</div>
+            <div class="top-bar-contact">
+                <a href="mailto:support@photozhouse.com"><i class="fa-solid fa-envelope"></i> support@photozhouse.com</a>
+                <a href="tel:+919717112235"><i class="fa-solid fa-phone"></i> +91 9717112235</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-camera-retro"></i> photozhouse
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="image-enhancement.html">Enhancement</a>
+                <a href="day-to-dusk.html">Day/Dusk</a>
+                <a href="virtual-staging.html">Staging</a>
+                <a href="floor-plans.html">Floor Plans</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Desktop Hero Section -->
+    <div class="desktop-hero">
+    <section class="hero-wrapper">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Elevate Your Property Marketing Visually</h1>
+                <p>We transform raw real estate photographs into stunning, magazine-quality visuals that captivate buyers and close deals faster.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-check"></i> Fast 24-hour turnaround time
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-check"></i> Unlimited minor revisions free
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-check"></i> 100% Quality & Satisfaction Guaranteed
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                <a href="#services" class="btn btn-outline" style="margin-left: 1rem;">View Services</a>
+            </div>
+
+            <div class="hero-slider-wrap">
+                <div class="twentytwenty-container" id="hero-slider">
+                    <!-- USING LOCAL IMAGES DIRECTORY -->
+                    <img src="images/empty_living_room_1773514613070.png" alt="Before" class="before-img">
+                    <img src="images/staged_living_room_1773514251654.png" alt="After" class="after-img" id="hero-after">
+                    <div class="slider-handle-hero" id="hero-handle"></div>
+                    <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-range">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Stats Section -->
+    <div class="container stats-container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>1.5K+</h3>
+                <p>Global Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>175+</h3>
+                <p>Expert Editors</p>
+            </div>
+            <div class="stat-item">
+                <h3>5M+</h3>
+                <p>Images Edited</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Mobile Hero Section (Matches Reference Image) -->
+    <div class="mobile-hero">
+        <div class="mobile-slider-wrap">
+              <div class="twentytwenty-container" id="hero-slider-mobile">
+                  <!-- USING LOCAL IMAGES DIRECTORY -->
+                  <img src="images/empty_living_room_1773514613070.png" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
+                  <img src="images/staged_living_room_1773514251654.png" alt="After" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" id="hero-mobile-after">
+                  <div class="slider-handle-hero" id="hero-mobile-handle"></div>
+                  <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-mobile-range">
+              </div>
+              <a href="mailto:support@photozhouse.com" class="floating-mail"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        
+        <div class="mobile-stats-grid">
+            <div class="mobile-stat-item">
+                <i class="fa-solid fa-user"></i>
+                <h3>1,095+</h3>
+                <p>Global Clients</p>
+            </div>
+            <div class="mobile-stat-item">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>15+</h3>
+                <p>Years in Business</p>
+            </div>
+            <div class="mobile-stat-item">
+                <i class="fa-solid fa-users"></i>
+                <h3>175+</h3>
+                <p>Employee Strength</p>
+            </div>
+            <div class="mobile-stat-item">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>1,500+</h3>
+                <p>Noteworthy Projects</p>
+            </div>
+        </div>
+
+        <div class="mobile-features">
+            <div class="mobile-feature-item">
+                <i class="fa-solid fa-check"></i>
+                <p>Fast 24-hour turnaround</p>
+            </div>
+            <div class="mobile-feature-item">
+                <i class="fa-solid fa-check"></i>
+                <p>Unlimited Free<br>Revisions</p>
+            </div>
+            <div class="mobile-feature-item">
+                <i class="fa-solid fa-check"></i>
+                <p>Edited file is yours to keep</p>
+            </div>
+        </div>
+
+        <div class="mobile-btn-container">
+            <a href="contact.html" class="btn btn-primary">GET STARTED</a>
+        </div>
+        <hr style="border: none; border-bottom: 1px solid var(--border); margin: 0 1.5rem 3rem 1.5rem;">
+    </div>
+
+    <!-- Featured Services (Elevated Grid) -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title">Premium Editing Services</h2>
+            <p class="section-subtitle">Tailored solutions for real estate agents, photographers, and builders to make every property listing stand out in a crowded market.</p>
+            
+            <div class="services-grid">
+                <a href="image-enhancement.html" class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="images/daytime_home_1773514925626.png" alt="Image Enhancement">
+                    </div>
+                    <div class="service-content">
+                        <h4>Image Enhancement</h4>
+                    </div>
+                </a>
+                
+                <a href="day-to-dusk.html" class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="images/hero_home_dusk_1773513997046.png" alt="Day to Dusk">
+                    </div>
+                    <div class="service-content">
+                        <h4>Day to Dusk</h4>
+                    </div>
+                </a>
+                
+                <a href="floor-plans.html" class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="images/floor_plan_1773514962762.png" alt="Floor Plans">
+                    </div>
+                    <div class="service-content">
+                        <h4>Floor Plans</h4>
+                    </div>
+                </a>
+                
+                <a href="virtual-staging.html" class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="images/staged_living_room_1773514251654.png" alt="Virtual Staging">
+                    </div>
+                    <div class="service-content">
+                        <h4>Virtual Staging</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section bg-subtle">
+        <div class="container split-section">
+            <div class="mini-slider-wrap">
+                <img src="images/daytime_home_1773514925626.png" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
+                <img src="images/hero_home_dusk_1773513997046.png" alt="After" style="width:100%; height:100%; object-fit:cover; position:absolute;" id="mini-after">
+                <div class="mini-slider-handle" id="mini-handle"></div>
+                <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="mini-range">
+            </div>
+
+            <div>
+                <h2 class="section-title" style="text-align: left;">The <span class="text-accent">PhotozHouse</span> Difference</h2>
+                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">We are a dedicated team of highly skilled photo editors and designers who process raw images and calibrate details to perfection, giving you favorable results in a quick turnaround time.</p>
+                
+                <div class="features-list">
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="feature-text">
+                            <h4>24/7 Priority Support</h4>
+                            <p>Our experienced professionals are available round the clock to help you overcome any editing challenges or revisions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="feature-text">
+                            <h4>Private & Secure</h4>
+                            <p>Being a certified service provider, we guarantee absolute security and confidentiality of your private listing data.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div class="feature-text">
+                            <h4>Expert Attention to Detail</h4>
+                            <p>Our team blends raw artistic talent with advanced technical tools to deliver bespoke solutions for every property.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Streamlined Process Step Range -->
+    <section class="section" style="padding: 8rem 0;">
+        <div class="container">
+            <h2 class="section-title">Seamless Workflow</h2>
+            <p class="section-subtitle">A streamlined process designed to save you time and maximize your output.</p>
+            
+            <div class="process-wrapper">
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h4>1. Shoot</h4>
+                    <p>Capture your real estate photos</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h4>2. Upload</h4>
+                    <p>Send files via our secure platform</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h4>3. Select</h4>
+                    <p>Pick the editing pack you need</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h4>4. Process</h4>
+                    <p>Our experts meticulously edit</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="fa-solid fa-download"></i></div>
+                    <h4>5. Deliver</h4>
+                    <p>Download your ready-to-market files</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title">Trusted By Professionals</h2>
+            <div class="testimonial-content">
+                <p>Words cannot express how happy I am seeing the enhanced state of my images. They look detailed, flourishing, highly contrasted and yet real and crispy. Simply gorgeous! You have understood my exact requirements and I am already smiling looking at the results. Kudos to your service!</p>
+                <h4 class="testimonial-author">Julia Young</h4>
+                <p style="font-size: 0.9rem; margin:0; opacity: 0.7;">Professional Photographer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beautiful Contact Block -->
+    <section class="section bg-subtle">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Let's discuss your project</h2>
+                    <p>Fill out the form and our team will get back to you within 24 hours with a custom quote.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h4>Office Location</h4>
+                            <span>New Delhi, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>Direct Line</h4>
+                            <a href="tel:+919717112235">+91 9717112235</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email Address</h4>
+                            <a href="mailto:support@photozhouse.com">support@photozhouse.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Send us a request</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Select a Service</option>
+                                <option>Image Enhancement</option>
+                                <option>Day to Dusk</option>
+                                <option>Virtual Staging</option>
+                                <option>Floor Plans</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elevated Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo"><i class="fa-solid fa-camera-retro" style="color:var(--accent);"></i> photozhouse</div>
+                    <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="image-enhancement.html">Image Enhancement</a></li>
+                        <li><a href="day-to-dusk.html">Day to Dusk</a></li>
+                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="floor-plans.html">Floor Plans</a></li>
+                        <li><a href="video-editing.html">Video Editing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Integration Partners</h4>
+                    <ul class="footer-links">
+                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-cloud"></i> WeTransfer</span></li>
+                        <li><span style="color: #94a3b8;"><i class="fa-brands fa-dropbox"></i> Dropbox Business</span></li>
+                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-server"></i> FTP Server</span></li>
+                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-paper-plane"></i> SendSpace</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>&copy; 2026 PhotozHouse. All Rights Reserved.</div>
+                <div>Terms & Conditions &nbsp; | &nbsp; Privacy Policy</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu
+            const btn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('navLinks');
+            if(btn && nav) {
+                btn.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+            }
+
+            // Slider 1
+            const heroRange = document.getElementById('hero-range');
+            const heroAfter = document.getElementById('hero-after');
+            const heroHandle = document.getElementById('hero-handle');
+            if(heroRange && heroAfter && heroHandle) {
+                heroRange.addEventListener('input', (e) => {
+                    const val = e.target.value;
+                    heroAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
+                    heroHandle.style.left = `${val}%`;
+                });
+            }
+
+            // Slider 2 (Why Choose Us)
+            const miniRange = document.getElementById('mini-range');
+            const miniAfter = document.getElementById('mini-after');
+            const miniHandle = document.getElementById('mini-handle');
+            if(miniRange && miniAfter && miniHandle) {
+                miniRange.addEventListener('input', (e) => {
+                    const val = e.target.value;
+                    miniAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
+                    miniHandle.style.left = `${val}%`;
+                });
+            }
+
+            // Mobile Hero Slider
+            const mobileRange = document.getElementById('hero-mobile-range');
+            const mobileAfter = document.getElementById('hero-mobile-after');
+            const mobileHandle = document.getElementById('hero-mobile-handle');
+            if(mobileRange && mobileAfter && mobileHandle) {
+                mobileRange.addEventListener('input', (e) => {
+                    const val = e.target.value;
+                    mobileAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
+                    mobileHandle.style.left = `${val}%`;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
