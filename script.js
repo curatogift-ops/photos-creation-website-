@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const value = e.target.value;
       
-      afterImage.style.clipPath = `polygon(0 0, ${value}% 0, ${value}% 100%, 0 100%)`;
+      afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
       handle.style.left = `${value}%`;
     });
   });

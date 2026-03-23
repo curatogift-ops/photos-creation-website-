@@ -24,7 +24,7 @@
     <header class="header">
         <div class="container navbar">
             <a href="index.html" class="logo">
-                <i class="fa-solid fa-camera-retro"></i> photozhouse
+                <img src="logo.png" alt="PhotozHouse Logo" style="height: 48px; width: auto;">
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -53,8 +53,8 @@
             <div class="hero-slider-wrap" style="max-width: 1000px; margin: 0 auto 5rem auto; transform: scale(1);">
                 <div class="twentytwenty-container" id="hero-slider">
                     <!-- USING LOCAL IMAGES DIRECTORY -->
-                    <img src="images/daytime_home_1773514925626.png" alt="Before" class="before-img">
-                    <img src="images/hero_home_dusk_1773513997046.png" alt="After" class="after-img" id="hero-after">
+                    <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_Before.jpg" alt="Before" class="before-img">
+                    <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="After" class="after-img" id="hero-after">
                     <div class="slider-handle-hero" id="hero-handle"></div>
                     <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-range">
                 </div>
@@ -90,12 +90,38 @@
         </div>
     </section>
 
+    <!-- Portfolio Gallery -->
+    <section class="section bg-subtle">
+        <div class="container">
+            <h2 class="section-title">Twilight Edits Showcase</h2>
+            <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Swipe left and right to see the dramatic before & after twilight conversion.</p>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                
+                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
+                    <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
+                    <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                </div>
+                
+                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
+                    <img src="images/Day to Dusk/2 BRIGHTNESS & CONTRAST ADJUSTMENT_ Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
+                    <img src="images/Day to Dusk/2 BRIGHTNESS & CONTRAST ADJUSTMENT_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Elevated Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo"><i class="fa-solid fa-camera-retro" style="color:var(--accent);"></i> photozhouse</div>
+                    <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 48px; width: auto;"></div>
                     <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
                 </div>
                 <div>
@@ -147,6 +173,18 @@
                     heroHandle.style.left = `${val}%`;
                 });
             }
+
+            const sliderRanges = document.querySelectorAll('.comparison-range');
+            sliderRanges.forEach(range => {
+                range.addEventListener('input', (e) => {
+                    const slider = e.target.closest('.comparison-slider');
+                    const afterImage = slider.querySelector('.comparison-after');
+                    const handle = slider.querySelector('.slider-handle');
+                    const value = e.target.value;
+                    afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
+                    handle.style.left = `${value}%`;
+                });
+            });
         });
     </script>
 </body>
