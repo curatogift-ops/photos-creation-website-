@@ -25,7 +25,7 @@
     <header class="header">
         <div class="container navbar">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;">
+                <img src="logo.png" alt="PhotozHouse Logo" style="height: 80px; width: auto;">
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -36,6 +36,7 @@
                 <a href="day-to-dusk.html">Day/Dusk</a>
                 <a href="virtual-staging.html" class="active">Staging</a>
                 <a href="floor-plans.html">Floor Plans</a>
+                <a href="video-editing.html">Video Editing</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
@@ -99,41 +100,41 @@
             <h2 class="section-title">Virtual Staging Showcase</h2>
             <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Swipe left and right to see the magic of our premium photo editing.</p>
             
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="services-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
                 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
                 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Virtual Staging/3 MULTIPLE FURNITURE STYLES_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Virtual Staging/3 MULTIPLE FURNITURE STYLES_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Virtual Staging/3 MULTIPLE FURNITURE STYLES_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Virtual Staging/3 MULTIPLE FURNITURE STYLES_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Virtual Staging/Bedroom 2 (14).jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Virtual Staging/Bedroom 2 (15).jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Virtual Staging/Bedroom 2 (14).jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Virtual Staging/Bedroom 2 (15).jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Virtual Staging/_PH10038.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Virtual Staging/_PH10038_1.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Virtual Staging/_PH10038.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Virtual Staging/_PH10038_1.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Virtual Staging/luxurious-empty-room-with-door.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Virtual Staging/luxurious-empty-room-with-door_1.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Virtual Staging/luxurious-empty-room-with-door.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Virtual Staging/luxurious-empty-room-with-door_1.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
 
             </div>
@@ -148,9 +149,9 @@
                     <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;"></div>
                     <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
                     <div class="social-icons" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="https://facebook.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/photoz.house.31" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/photozhouse/" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://wa.me/919717112235" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -168,6 +169,7 @@
                         <li><a href="day-to-dusk.html">Day to Dusk</a></li>
                         <li><a href="virtual-staging.html">Virtual Staging</a></li>
                         <li><a href="floor-plans.html">Floor Plans</a></li>
+                        <li><a href="video-editing.html">Video Editing</a></li>
                     </ul>
                 </div>
                 <div>
@@ -183,40 +185,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.getElementById('mobileMenuBtn');
-            const nav = document.getElementById('navLinks');
-            if(btn && nav) {
-                btn.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-            }
-            // Slider
-            const heroRange = document.getElementById('hero-range');
-            const heroAfter = document.getElementById('hero-after');
-            const heroHandle = document.getElementById('hero-handle');
-            if(heroRange && heroAfter && heroHandle) {
-                heroRange.addEventListener('input', (e) => {
-                    const val = e.target.value;
-                    heroAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
-                    heroHandle.style.left = `${val}%`;
-                });
-            }
+    <!-- Universal Script Integration -->
+    <script src="script.js"></script>
 
-            const sliderRanges = document.querySelectorAll('.comparison-range');
-            sliderRanges.forEach(range => {
-                range.addEventListener('input', (e) => {
-                    const slider = e.target.closest('.comparison-slider');
-                    const afterImage = slider.querySelector('.comparison-after');
-                    const handle = slider.querySelector('.slider-handle');
-                    const value = e.target.value;
-                    afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-                    handle.style.left = `${value}%`;
-                });
-            });
-        });
-    </script>
     <!-- Whatsapp Floating Icon -->
     <a href="https://wa.me/919717112235" class="whatsapp-float" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>

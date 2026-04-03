@@ -24,7 +24,7 @@
     <header class="header">
         <div class="container navbar">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;">
+                <img src="logo.png" alt="PhotozHouse Logo" style="height: 80px; width: auto;">
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -35,6 +35,7 @@
                 <a href="day-to-dusk.html">Day/Dusk</a>
                 <a href="virtual-staging.html">Staging</a>
                 <a href="floor-plans.html">Floor Plans</a>
+                <a href="video-editing.html">Video Editing</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
@@ -42,27 +43,33 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Real Estate <span class="text-accent">Image Enhancement</span></h1>
-            <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: var(--text-light);">We improve lighting, exposure, colors, sharpness and overall presentation of property images to make them visually appealing and market ready.</p>
+            <h1>Premium <span class="text-accent">Photo Enhancement</span></h1>
+            <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: var(--text-light);">We improve lighting, exposure, colors, and sharpness to make your property images stand out in the competitive market.</p>
         </div>
     </div>
 
     <section class="section">
         <div class="container">
+            <!-- Full Width Comparison Slider -->
+            <div class="hero-slider-wrap" style="max-width: 1000px; margin: 0 auto 5rem auto; transform: scale(1);">
+                <div class="twentytwenty-container" id="hero-slider">
+                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_Before.jpg" alt="Before" class="before-img">
+                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg" alt="After" class="after-img" id="hero-after">
+                    <div class="slider-handle-hero" id="hero-handle"></div>
+                    <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-range">
+                </div>
+            </div>
+
             <div class="content-grid">
                 <div>
                     <h2 class="section-title" style="font-size: 2rem; text-align: left;">What We Improve</h2>
                     <ul class="simple-list">
-                        <li><i class="fa-solid fa-check"></i> White Balance</li>
+                        <li><i class="fa-solid fa-check"></i> White Balance correction</li>
                         <li><i class="fa-solid fa-check"></i> Vertical & Horizontal straightening</li>
                         <li><i class="fa-solid fa-check"></i> Brightness & Contrast Adjustment</li>
                         <li><i class="fa-solid fa-check"></i> Sky Replacement</li>
                         <li><i class="fa-solid fa-check"></i> Lawn Enhancement - Repair or Replace</li>
-                        <li><i class="fa-solid fa-check"></i> Ocean/River Water Enhancement</li>
-                        <li><i class="fa-solid fa-check"></i> Tv Sceen Replacement</li>
-                        <li><i class="fa-solid fa-check"></i> Flash Reflection Removal</li>
-                        <li><i class="fa-solid fa-check"></i> Add Fire to Fireplaces</li>
-                        <li><i class="fa-solid fa-check"></i> HDr Bracketing with Indoor Window Replacent</li>
+                        <li><i class="fa-solid fa-check"></i> Removing distracting objects</li>
                     </ul>
 
                     <h3 style="margin-top: 2rem; color: var(--primary);">Delivery Time</h3>
@@ -70,18 +77,15 @@
 
                     <a href="contact.html" class="btn btn-primary" style="margin-top: 2rem;">Upload Images <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <div class="content-image-wrap">
-                    <img src="images/Image Enhancement/1 White Balance_After.jpg" alt="Enhanced Room Example">
-                </div>
-            </div>
-            
-            <div style="margin-top: 6rem;">
-                <h2 class="section-title">Who Needs This</h2>
-                <div class="services-grid" style="margin-top: 3rem;">
-                    <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-user-tie" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Real Estate Agents</h4></div>
-                    <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-camera" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Photographers</h4></div>
-                    <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-building" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Builders</h4></div>
-                    <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-house-user" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Rental Owners</h4></div>
+                
+                <div>
+                     <h2 class="section-title" style="font-size: 2rem; text-align: left;">Premium Features</h2>
+                     <div class="services-grid" style="grid-template-columns: 1fr 1fr; gap:1.5rem; margin-top: 2rem;">
+                         <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Color Casting</h4></div>
+                         <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-sun" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Sun Ray Addition</h4></div>
+                         <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-window-maximize" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Window Masking</h4></div>
+                         <div class="service-card" style="padding: 2rem; text-align: center;"><i class="fa-solid fa-eraser" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i><h4>Flash Removal</h4></div>
+                     </div>
                 </div>
             </div>
         </div>
@@ -90,58 +94,51 @@
     <!-- Portfolio Gallery -->
     <section class="section bg-subtle">
         <div class="container">
-            <h2 class="section-title">Image Enhancement Showcase</h2>
-            <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Swipe left and right to see the magic of our premium photo editing.</p>
+            <h2 class="section-title">Photo Enhancement Showcase</h2>
+            <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Use the sliders below to see the dramatic improvement in quality.</p>
             
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="services-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
                 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-                
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/4 Sky Replacement_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/4 Sky Replacement_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/5 Lawn Enhancement - Repair or Replace_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/5 Lawn Enhancement - Repair or Replace_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/6 OceanRiver Water Enhancement_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/6 OceanRiver Water Enhancement_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/7 Tv Sceen Replacement & Fireplace_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/7 Tv Sceen Replacement & Fireplace_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
                 
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/Image Enhancement/Removing_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/Image Enhancement/Removing_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/4 Sky Replacement_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/4 Sky Replacement_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
+                </div>
+
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/5 Lawn Enhancement - Repair or Replace_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/5 Lawn Enhancement - Repair or Replace_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
+                </div>
+
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/6 OceanRiver Water Enhancement_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/6 OceanRiver Water Enhancement_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
+                </div>
+
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/7 Tv Sceen Replacement & Fireplace_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/7 Tv Sceen Replacement & Fireplace_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
+                </div>
+                
+                <div class="comparison-slider">
+                    <img src="images/Image Enhancement/Removing_Before.jpg" alt="Before" loading="lazy" decoding="async">
+                    <img src="images/Image Enhancement/Removing_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
                 </div>
 
             </div>
@@ -156,9 +153,9 @@
                     <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;"></div>
                     <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
                     <div class="social-icons" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="https://facebook.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/photoz.house.31" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/photozhouse/" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://wa.me/919717112235" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -176,6 +173,7 @@
                         <li><a href="day-to-dusk.html">Day to Dusk</a></li>
                         <li><a href="virtual-staging.html">Virtual Staging</a></li>
                         <li><a href="floor-plans.html">Floor Plans</a></li>
+                        <li><a href="video-editing.html">Video Editing</a></li>
                     </ul>
                 </div>
                 <div>
@@ -191,29 +189,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.getElementById('mobileMenuBtn');
-            const nav = document.getElementById('navLinks');
-            if(btn && nav) {
-                btn.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-            }
+    <!-- Universal Script Integration -->
+    <script src="script.js"></script>
 
-            const sliderRanges = document.querySelectorAll('.comparison-range');
-            sliderRanges.forEach(range => {
-                range.addEventListener('input', (e) => {
-                    const slider = e.target.closest('.comparison-slider');
-                    const afterImage = slider.querySelector('.comparison-after');
-                    const handle = slider.querySelector('.slider-handle');
-                    const value = e.target.value;
-                    afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-                    handle.style.left = `${value}%`;
-                });
-            });
-        });
-    </script>
     <!-- Whatsapp Floating Icon -->
     <a href="https://wa.me/919717112235" class="whatsapp-float" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>

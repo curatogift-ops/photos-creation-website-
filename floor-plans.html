@@ -24,7 +24,7 @@
     <header class="header">
         <div class="container navbar">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;">
+                <img src="logo.png" alt="PhotozHouse Logo" style="height: 80px; width: auto;">
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fa-solid fa-bars"></i>
@@ -35,6 +35,7 @@
                 <a href="day-to-dusk.html">Day/Dusk</a>
                 <a href="virtual-staging.html">Staging</a>
                 <a href="floor-plans.html" class="active">Floor Plans</a>
+                <a href="video-editing.html">Video Editing</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
@@ -51,10 +52,9 @@
         <div class="container">
             <!-- Full Width Comparison Slider for Floor Plans -->
             <div class="hero-slider-wrap" style="max-width: 1000px; margin: 0 auto 5rem auto; transform: scale(1);">
-                <div class="twentytwenty-container" id="hero-slider">
-                    <!-- USING LOCAL IMAGES DIRECTORY -->
-                    <img src="images/4+.jpg" alt="Technical Sketch" class="before-img">
-                    <img src="images/4.jpg" alt="Final 3D Render" class="after-img" id="hero-after">
+                <div class="twentytwenty-container" id="hero-slider" style="background: #f8f9fa;">
+                    <img src="images/4+.jpg" alt="Technical Sketch" class="before-img" style="object-fit: contain;">
+                    <img src="images/4.jpg" alt="Final 3D Render" class="after-img" id="hero-after" style="object-fit: contain;">
                     <div class="slider-handle-hero" id="hero-handle"></div>
                     <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-range">
                 </div>
@@ -79,7 +79,7 @@
                 </div>
                 
                 <div class="content-image-wrap">
-                    <img src="images/Floorplan/11 maureen close, Cranbourne West.jpg" alt="3D Floor Plan Example">
+                    <img src="images/Floorplan/11 maureen close, Cranbourne West.jpg" alt="3D Floor Plan Example" style="object-fit: contain;">
                 </div>
             </div>
             
@@ -106,6 +106,31 @@
         </div>
     </section>
 
+    <!-- Showcase Section Add -->
+    <section class="section bg-subtle">
+        <div class="container">
+            <h2 class="section-title">Floor Plan Gallery</h2>
+            <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Professional outputs redrawn from on-site measurements and rough sketches.</p>
+            
+            <div class="services-grid fade-up" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="comparison-slider" style="height: 400px; background: #fff;">
+                    <img src="images/4+.jpg" alt="Before" style="object-fit: contain;" loading="lazy" decoding="async">
+                    <img src="images/4.jpg" alt="After" class="comparison-after" style="object-fit: contain; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" loading="lazy" decoding="async">
+                    <div class="slider-handle"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <input type="range" class="comparison-range" min="0" max="100" value="50">
+                </div>
+                
+                <div class="service-card" style="padding:0; overflow:hidden; height: 400px;">
+                    <img src="images/Floorplan/11 maureen close, Cranbourne West.jpg" alt="Floor Plan" style="width:100%; height:100%; object-fit:contain;" loading="lazy" decoding="async">
+                </div>
+
+                <div class="service-card" style="padding:0; overflow:hidden; height: 400px;">
+                    <img src="images/floor_plan_1773514962762.png" alt="Floor Plan" style="width:100%; height:100%; object-fit:contain;" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Elevated Footer -->
     <footer class="footer">
         <div class="container">
@@ -114,9 +139,9 @@
                     <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;"></div>
                     <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
                     <div class="social-icons" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="https://facebook.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/photoz.house.31" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/photozhouse/" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/photozhouse" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://wa.me/919717112235" target="_blank" style="color: #94a3b8;"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -134,6 +159,7 @@
                         <li><a href="day-to-dusk.html">Day to Dusk</a></li>
                         <li><a href="virtual-staging.html">Virtual Staging</a></li>
                         <li><a href="floor-plans.html">Floor Plans</a></li>
+                        <li><a href="video-editing.html">Video Editing</a></li>
                     </ul>
                 </div>
                 <div>
@@ -149,29 +175,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.getElementById('mobileMenuBtn');
-            const nav = document.getElementById('navLinks');
-            if(btn && nav) {
-                btn.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-            }
+    <!-- Universal Script Integration -->
+    <script src="script.js"></script>
 
-            // Hero Slider
-            const heroRange = document.getElementById('hero-range');
-            const heroAfter = document.getElementById('hero-after');
-            const heroHandle = document.getElementById('hero-handle');
-            if(heroRange && heroAfter && heroHandle) {
-                heroRange.addEventListener('input', (e) => {
-                    const val = e.target.value;
-                    heroAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
-                    heroHandle.style.left = `${val}%`;
-                });
-            }
-        });
-    </script>
     <!-- Whatsapp Floating Icon -->
     <a href="https://wa.me/919717112235" class="whatsapp-float" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>

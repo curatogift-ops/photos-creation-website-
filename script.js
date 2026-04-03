@@ -46,19 +46,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
-  // Comparison Slider Logic
-  const sliderRanges = document.querySelectorAll('.comparison-range');
+  // Global Comparison Slider Logic
+  // Handles .comparison-slider (gallery) AND hero sliders if they use these classes
+  const initSliders = () => {
+    const sliderRanges = document.querySelectorAll('.comparison-range, #hero-range, #hero-mobile-range, #mini-range');
+    
+    sliderRanges.forEach(range => {
+      const container = range.closest('.comparison-slider, .twentytwenty-container, .mini-slider-wrap');
+      if (!container) return;
+
+      const afterImage = container.querySelector('.comparison-after, .after-img, #hero-after, #hero-mobile-after, #mini-after');
+      const handle = container.querySelector('.slider-handle, .slider-handle-hero, #hero-handle, #hero-mobile-handle, #mini-handle');
+      
+      if (!afterImage || !handle) return;
+
+      range.addEventListener('input', (e) => {
+        const value = e.target.value;
+        afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
+        handle.style.left = `${value}%`;
+      });
+    });
+  };
+
+  initSliders();
   
-  sliderRanges.forEach(range => {
-    range.addEventListener('input', (e) => {
-      const slider = e.target.closest('.comparison-slider');
-      const afterImage = slider.querySelector('.comparison-after');
-      const handle = slider.querySelector('.slider-handle');
-      
-      const value = e.target.value;
-      
-      afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-      handle.style.left = `${value}%`;
+  // Smooth Scroll for Anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
     });
   });
 });

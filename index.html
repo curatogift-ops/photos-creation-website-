@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhotozHouse | Premium Photo Editing</title>
-    <meta name="description" content="Professional real estate photo editing that helps you sell faster.">
+    <title>PhotozHouse | Premium Real Estate Photo Editing Services</title>
+    <meta name="description" content="Professional real estate photo editing, virtual staging, and floor plan services. Fast 24-hour turnaround for property photographers and agents.">
+    <meta name="keywords" content="real estate photo editing, virtual staging, floor plans, day to dusk, photo enhancement">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -27,7 +28,7 @@
     <header class="header">
         <div class="container navbar">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;">
+                <img src="logo.png" alt="PhotozHouse Logo" style="height: 80px; width: auto;">
             </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -40,6 +41,7 @@
                 <a href="day-to-dusk.html">Day/Dusk</a>
                 <a href="virtual-staging.html">Staging</a>
                 <a href="floor-plans.html">Floor Plans</a>
+                <a href="video-editing.html">Video Editing</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
@@ -47,72 +49,74 @@
 
     <!-- Desktop Hero Section -->
     <div class="desktop-hero">
-    <section class="hero-wrapper">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h1>Elevate Your Property Marketing Visually</h1>
-                <p>We transform raw real estate photographs into stunning, magazine-quality visuals that captivate buyers and close deals faster.</p>
-                
-                <div class="hero-features">
-                    <div class="hero-feature-item">
-                        <i class="fa-solid fa-check"></i> Fast 24-hour turnaround time
+        <section class="hero-wrapper">
+            <div class="container hero-grid">
+                <div class="hero-content fade-up">
+                    <h1>Elevate Your Property <span class="text-accent">Marketing Visually</span></h1>
+                    <p>We transform raw real estate photographs into stunning, magazine-quality visuals that captivate buyers and close deals faster.</p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-check"></i> Fast 24-hour turnaround time
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-check"></i> Unlimited minor revisions free
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fa-solid fa-check"></i> 100% Quality & Satisfaction Guaranteed
+                        </div>
                     </div>
-                    <div class="hero-feature-item">
-                        <i class="fa-solid fa-check"></i> Unlimited minor revisions free
-                    </div>
-                    <div class="hero-feature-item">
-                        <i class="fa-solid fa-check"></i> 100% Quality & Satisfaction Guaranteed
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2.5rem;">
+                        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                        <a href="#services" class="btn btn-outline">View Services</a>
                     </div>
                 </div>
 
-                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
-                <a href="#services" class="btn btn-outline" style="margin-left: 1rem;">View Services</a>
+                <div class="hero-slider-wrap fade-up">
+                    <div class="twentytwenty-container">
+                        <div class="comparison-slider">
+                            <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_Before.jpg" alt="Before">
+                            <img src="images/Image Enhancement/3 Brightness & Contrast Adjustment_After.jpg" alt="After" class="comparison-after" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                            <div class="slider-handle" style="left: 50%;"><i class="fa-solid fa-arrows-left-right"></i></div>
+                            <input type="range" class="comparison-range" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="hero-slider-wrap">
-                <div class="twentytwenty-container" id="hero-slider">
-                    <!-- USING LOCAL IMAGES DIRECTORY -->
-                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_Before.jpg" alt="Before" class="before-img">
-                    <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg" alt="After" class="after-img" id="hero-after">
-                    <div class="slider-handle-hero" id="hero-handle"></div>
-                    <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-range">
+        <!-- Floating Stats Section -->
+        <div class="container stats-container fade-up">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>1.5K+</h3>
+                    <p>Global Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>Expert Editors</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5M+</h3>
+                    <p>Images Edited</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Floating Stats Section -->
-    <div class="container stats-container">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>1.5K+</h3>
-                <p>Global Clients</p>
-            </div>
-            <div class="stat-item">
-                <h3>10+</h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-                <h3>175+</h3>
-                <p>Expert Editors</p>
-            </div>
-            <div class="stat-item">
-                <h3>5M+</h3>
-                <p>Images Edited</p>
-            </div>
-        </div>
-    </div>
     </div>
 
-    <!-- Mobile Hero Section (Matches Reference Image) -->
+    <!-- Mobile Hero Section -->
     <div class="mobile-hero">
         <div class="mobile-slider-wrap">
-              <div class="twentytwenty-container" id="hero-slider-mobile">
-                  <!-- USING LOCAL IMAGES DIRECTORY -->
+              <div class="comparison-slider" style="height: 100%;">
                   <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                  <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg" alt="After" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);" id="hero-mobile-after">
-                  <div class="slider-handle-hero" id="hero-mobile-handle"></div>
-                  <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="hero-mobile-range">
+                  <img src="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                  <div class="slider-handle" style="left: 50%;"><i class="fa-solid fa-arrows-left-right"></i></div>
+                  <input type="range" class="comparison-range" min="0" max="100" value="50">
               </div>
               <a href="mailto:Info@Photozhouse.com" class="floating-mail"><i class="fa-regular fa-envelope"></i></a>
         </div>
@@ -125,13 +129,13 @@
             </div>
             <div class="mobile-stat-item">
                 <i class="fa-solid fa-handshake"></i>
-                <h3>15+</h3>
+                <h3>20+</h3>
                 <p>Years in Business</p>
             </div>
             <div class="mobile-stat-item">
                 <i class="fa-solid fa-users"></i>
-                <h3>175+</h3>
-                <p>Employee Strength</p>
+                <h3>20+</h3>
+                <p>Expert Editors</p>
             </div>
             <div class="mobile-stat-item">
                 <i class="fa-solid fa-chalkboard-user"></i>
@@ -158,46 +162,47 @@
         <div class="mobile-btn-container">
             <a href="contact.html" class="btn btn-primary">GET STARTED</a>
         </div>
-        <hr style="border: none; border-bottom: 1px solid var(--border); margin: 0 1.5rem 3rem 1.5rem;">
     </div>
 
-    <!-- Featured Services (Elevated Grid) -->
+    <!-- Featured Services -->
     <section class="section" id="services">
         <div class="container">
-            <h2 class="section-title">Premium Editing Services</h2>
-            <p class="section-subtitle">Tailored solutions for real estate agents, photographers, and builders to make every property listing stand out in a crowded market.</p>
+            <div class="fade-up">
+                <h2 class="section-title">Premium Editing <span class="text-accent">Services</span></h2>
+                <p class="section-subtitle">Tailored solutions for real estate professionals to make every property listing stand out.</p>
+            </div>
             
             <div class="services-grid">
-                <a href="image-enhancement.html" class="service-card">
+                <a href="image-enhancement.html" class="service-card fade-up">
                     <div class="service-img-wrap">
-                        <img src="images/Image Enhancement/1 White Balance_After.jpg" alt="Image Enhancement">
+                        <img src="images/Image Enhancement/1 White Balance_After.jpg" alt="Image Enhancement" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h4>Image Enhancement</h4>
                     </div>
                 </a>
                 
-                <a href="day-to-dusk.html" class="service-card">
+                <a href="day-to-dusk.html" class="service-card fade-up">
                     <div class="service-img-wrap">
-                        <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="Day to Dusk">
+                        <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="Day to Dusk" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h4>Day to Dusk</h4>
                     </div>
                 </a>
                 
-                <a href="floor-plans.html" class="service-card">
+                <a href="floor-plans.html" class="service-card fade-up">
                     <div class="service-img-wrap">
-                        <img src="images/Floorplan/11 maureen close, Cranbourne West.jpg" alt="Floor Plans">
+                        <img src="images/Floorplan/11 maureen close, Cranbourne West.jpg" alt="Floor Plans" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h4>Floor Plans</h4>
                     </div>
                 </a>
                 
-                <a href="virtual-staging.html" class="service-card">
+                <a href="virtual-staging.html" class="service-card fade-up">
                     <div class="service-img-wrap">
-                        <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_After.jpg" alt="Virtual Staging">
+                        <img src="images/Virtual Staging/PHOTO-REALISTIC VIRTUAL STAGING_After.jpg" alt="Virtual Staging" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h4>Virtual Staging</h4>
@@ -207,76 +212,67 @@
         </div>
     </section>
 
-    <!-- Video Portfolio Section -->
+    <!-- Detailed Showcase with Video -->
     <section class="section bg-dark text-white" style="background: #0f172a; padding: 6rem 0;">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Expert Video Editing</h2>
-            <p class="section-subtitle" style="color: #94a3b8; text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">Transforming raw drone footage and property walkthroughs into cinematic marketing masterpieces.</p>
+            <div class="fade-up">
+                <h2 class="section-title" style="color: white;">Cinematic <span class="text-accent">Video Editing</span></h2>
+                <p class="section-subtitle" style="color: #94a3b8;">Capturing the soul of every property through professional motion editing.</p>
+            </div>
             
             <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
-                    <video controls style="width: 100%; display: block;">
+                <div class="fade-up" style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
+                    <video controls style="width: 100%; display: block;" preload="metadata" poster="images/Image Enhancement/10 HDr Bracketing with Indoor Window Replacent_After.jpg">
                         <source src="images/Video Editing/Sample Project.mp4" type="video/mp4">
                     </video>
-                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Sample Project</h4></div>
+                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Full House Tour</h4></div>
                 </div>
                 
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
-                    <video controls style="width: 100%; display: block;">
+                <div class="fade-up" style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
+                    <video controls style="width: 100%; display: block;" preload="metadata" poster="daytime_home_1773514925626.png">
                         <source src="images/Video Editing/raw aerial vids.mp4" type="video/mp4">
                     </video>
-                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Aerial Cinematic</h4></div>
+                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Aerial Drone Edit</h4></div>
                 </div>
                 
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
-                    <video controls style="width: 100%; display: block;">
+                <div class="fade-up" style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3); background: black;">
+                    <video controls style="width: 100%; display: block;" preload="metadata" poster="hero_home_dusk_1773513997046.png">
                         <source src="14.mp4" type="video/mp4">
                     </video>
-                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Premium Showcase</h4></div>
+                    <div style="padding: 1.5rem; background: #1e293b;"><h4 style="margin: 0; color: white;">Short Teaser Edit</h4></div>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="video-editing.html" class="btn btn-primary">Explore Video Services</a>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="section bg-subtle">
+    <section class="section">
         <div class="container split-section">
-            <div class="mini-slider-wrap">
+            <div class="comparison-slider fade-up" style="border-radius: 20px; height: 400px; overflow: hidden; position: relative;">
                 <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_Before.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="After" style="width:100%; height:100%; object-fit:cover; position:absolute;" id="mini-after">
-                <div class="mini-slider-handle" id="mini-handle"></div>
-                <input type="range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;" id="mini-range">
+                <img src="images/Day to Dusk/1 DUSK SKY REPLACEMENT_After.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                <div class="slider-handle" style="left: 50%;"><i class="fa-solid fa-arrows-left-right"></i></div>
+                <input type="range" class="comparison-range" min="0" max="100" value="50">
             </div>
 
-            <div>
+            <div class="fade-up">
                 <h2 class="section-title" style="text-align: left;">The <span class="text-accent">PhotozHouse</span> Difference</h2>
-                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">We are a dedicated team of highly skilled photo editors and designers who process raw images and calibrate details to perfection, giving you favorable results in a quick turnaround time.</p>
+                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">A dedicated global team delivering bespoke solutions with a meticulous eye for detail and luxury finish.</p>
                 
                 <div class="features-list">
                     <div class="feature-block">
                         <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
                         <div class="feature-text">
-                            <h4>24/7 Priority Support</h4>
-                            <p>Our experienced professionals are available round the clock to help you overcome any editing challenges or revisions.</p>
+                            <h4>Personalized Support</h4>
+                            <p>Direct communication paths for fast revisions and creative brainstorming.</p>
                         </div>
                     </div>
                     
                     <div class="feature-block">
                         <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
                         <div class="feature-text">
-                            <h4>Private & Secure</h4>
-                            <p>Being a certified service provider, we guarantee absolute security and confidentiality of your private listing data.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-block">
-                        <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                        <div class="feature-text">
-                            <h4>Expert Attention to Detail</h4>
-                            <p>Our team blends raw artistic talent with advanced technical tools to deliver bespoke solutions for every property.</p>
+                            <h4>Data Integrity</h4>
+                            <p>Enterprise-grade security ensuring your property listings remain confidential.</p>
                         </div>
                     </div>
                 </div>
@@ -284,110 +280,66 @@
         </div>
     </section>
 
-    <!-- Streamlined Process Step Range -->
-    <section class="section" style="padding: 8rem 0;">
+    <!-- Workflow -->
+    <section class="section bg-subtle">
         <div class="container">
-            <h2 class="section-title">Seamless Workflow</h2>
-            <p class="section-subtitle">A streamlined process designed to save you time and maximize your output.</p>
+            <div class="fade-up">
+                <h2 class="section-title">Streamlined <span class="text-accent">Workflow</span></h2>
+                <p class="section-subtitle">Simplified steps to get your project moving faster.</p>
+            </div>
             
-            <div class="process-wrapper">
+            <div class="process-wrapper fade-up">
                 <div class="process-step">
                     <div class="step-icon"><i class="fa-solid fa-camera"></i></div>
                     <h4>1. Shoot</h4>
-                    <p>Capture your real estate photos</p>
+                    <p>Standard professional photography</p>
                 </div>
                 <div class="process-step">
                     <div class="step-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                     <h4>2. Upload</h4>
-                    <p>Send files via our secure platform</p>
+                    <p>Send via Dropbox or WeTransfer</p>
                 </div>
                 <div class="process-step">
-                    <div class="step-icon"><i class="fa-solid fa-sliders"></i></div>
-                    <h4>3. Select</h4>
-                    <p>Pick the editing pack you need</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-icon"><i class="fa-solid fa-desktop"></i></div>
-                    <h4>4. Process</h4>
-                    <p>Our experts meticulously edit</p>
+                    <div class="step-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h4>3. Edit</h4>
+                    <p>Meticulous premium processing</p>
                 </div>
                 <div class="process-step">
                     <div class="step-icon"><i class="fa-solid fa-download"></i></div>
-                    <h4>5. Deliver</h4>
-                    <p>Download your ready-to-market files</p>
+                    <h4>4. Review</h4>
+                    <p>Final high-res delivery</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Before & After Portfolio -->
-    <section class="section bg-subtle">
+    <!-- Testimonials -->
+    <section class="section" style="background: linear-gradient(to right, #0f172a, #1e293b); color: white;">
         <div class="container">
-            <h2 class="section-title">Before & After Showcase</h2>
-            <p class="section-subtitle" style="text-align:center; max-width:600px; margin:0 auto;">Swipe left and right to see the magic of our premium photo editing across different properties.</p>
-            
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
-                
-                <!-- Item 1 -->
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/1.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/1+.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
+            <div class="fade-up" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <i class="fa-solid fa-quote-left" style="font-size: 3rem; color: var(--accent); margin-bottom: 2rem; opacity: 0.5;"></i>
+                <p style="font-size: 1.5rem; font-weight: 300; font-style: italic; line-height: 1.6; margin-bottom: 2rem;">"The results are simply stunning. PhotozHouse has transformed our marketing materials, helping us secure more luxury listings and sell properties 30% faster."</p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                    <div style="width: 50px; height: 5px; background: var(--accent);"></div>
+                    <h4 style="color: white; margin: 0; font-size: 1.25rem;">Sarah Mitchell</h4>
+                    <span style="color: #94a3b8;">Elite Real Estate Group</span>
                 </div>
-                
-                <!-- Item 2 -->
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/3.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/3+.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-                
-                <!-- Item 3 -->
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/5.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/5+.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-                
-                <!-- Item 4 -->
-                <div class="comparison-slider" style="position: relative; overflow: hidden; border-radius: 12px; height: 300px; box-shadow: var(--shadow-md);">
-                    <img src="images/_GA_6088.jpg" alt="Before" style="width:100%; height:100%; object-fit:cover; position:absolute;">
-                    <img src="images/_GA_6089.jpg" alt="After" class="comparison-after" style="width:100%; height:100%; object-fit:cover; position:absolute; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
-                    <div class="slider-handle" style="position: absolute; width: 40px; height: 40px; background: white; border-radius: 50%; top: 50%; transform: translate(-50%, -50%); left: 50%; z-index: 10; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); pointer-events:none;"><i class="fa-solid fa-arrows-left-right" style="color:var(--primary);"></i></div>
-                    <input type="range" class="comparison-range" min="0" max="100" value="50" style="position:absolute; width:100%; height:100%; opacity:0; z-index:20; cursor:ew-resize;">
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="testimonial-section">
+    <!-- Contact Block -->
+    <section class="section" id="contact">
         <div class="container">
-            <h2 class="section-title">Trusted By Professionals</h2>
-            <div class="testimonial-content">
-                <p>Words cannot express how happy I am seeing the enhanced state of my images. They look detailed, flourishing, highly contrasted and yet real and crispy. Simply gorgeous! You have understood my exact requirements and I am already smiling looking at the results. Kudos to your service!</p>
-                <h4 class="testimonial-author">Julia Young</h4>
-                <p style="font-size: 0.9rem; margin:0; opacity: 0.7;">Professional Photographer</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Beautiful Contact Block -->
-    <section class="section bg-subtle">
-        <div class="container">
-            <div class="contact-container">
+            <div class="contact-container fade-up">
                 <div class="contact-info">
-                    <h2>Let's discuss your project</h2>
-                    <p>Fill out the form and our team will get back to you within 24 hours with a custom quote.</p>
+                    <h2 style="color: white;">Start Your <span class="text-accent">Transformation</span></h2>
+                    <p>Ready to elevate your property visuals? Get in touch today for a custom quote or trial.</p>
                     
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="info-text">
-                            <h4>Office Location</h4>
+                            <h4>Headquarters</h4>
                             <span>New Delhi, India</span>
                         </div>
                     </div>
@@ -395,164 +347,77 @@
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                         <div class="info-text">
-                            <h4>Direct Line</h4>
+                            <h4>Direct Phone</h4>
                             <a href="tel:+919717112235">+91 9717112235</a>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="info-text">
-                            <h4>Email Address</h4>
-                            <a href="mailto:Info@Photozhouse.com">Info@Photozhouse.com</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Send us a request</h3>
+                    <h3 style="margin-bottom: 2rem;">Inquiry Form</h3>
                     <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address">
-                        </div>
+                        <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
+                        <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
                         <div class="form-group">
                             <select class="form-control">
-                                <option>Select a Service</option>
+                                <option>Service of interest</option>
                                 <option>Image Enhancement</option>
                                 <option>Day to Dusk</option>
                                 <option>Virtual Staging</option>
-                                <option>Floor Plans</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Tell us about your requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Contact Us</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Elevated Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 48px; width: auto;"></div>
-                    <p>Premium real estate photo editing empowering agents and photographers to present properties at their absolute best.</p>
+                    <div class="logo"><img src="logo.png" alt="PhotozHouse Logo" style="height: 60px; width: auto;"></div>
+                    <p>Elevating real estate marketing since 2004. Quality, speed, and precision in every pixel.</p>
                     <div class="social-icons">
-                        <a href="https://facebook.com/photozhouse" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/photozhouse" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/photozhouse" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/photoz.house.31" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/photozhouse/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/photozhouse" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://wa.me/919717112235" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4>Quick Links</h4>
+                    <h4>Explore</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="contact.html">Work With Us</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="image-enhancement.html">Image Enhancement</a></li>
+                        <li><a href="image-enhancement.html">Enhancement</a></li>
                         <li><a href="day-to-dusk.html">Day to Dusk</a></li>
-                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="virtual-staging.html">Staging</a></li>
                         <li><a href="floor-plans.html">Floor Plans</a></li>
-                        <li><a href="video-editing.html">Video Editing</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4>Integration Partners</h4>
-                    <ul class="footer-links">
-                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-cloud"></i> WeTransfer</span></li>
-                        <li><span style="color: #94a3b8;"><i class="fa-brands fa-dropbox"></i> Dropbox Business</span></li>
-                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-server"></i> FTP Server</span></li>
-                        <li><span style="color: #94a3b8;"><i class="fa-solid fa-paper-plane"></i> SendSpace</span></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div>&copy; 2026 PhotozHouse. All Rights Reserved.</div>
-                <div>Terms & Conditions &nbsp; | &nbsp; Privacy Policy</div>
+                <div>Excellence in Real Estate Editing</div>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Scripts -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile Menu
-            const btn = document.getElementById('mobileMenuBtn');
-            const nav = document.getElementById('navLinks');
-            if(btn && nav) {
-                btn.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-            }
+    <!-- Universal Script Integration -->
+    <script src="script.js"></script>
 
-            // Slider 1
-            const heroRange = document.getElementById('hero-range');
-            const heroAfter = document.getElementById('hero-after');
-            const heroHandle = document.getElementById('hero-handle');
-            if(heroRange && heroAfter && heroHandle) {
-                heroRange.addEventListener('input', (e) => {
-                    const val = e.target.value;
-                    heroAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
-                    heroHandle.style.left = `${val}%`;
-                });
-            }
-
-            // Slider 2 (Why Choose Us)
-            const miniRange = document.getElementById('mini-range');
-            const miniAfter = document.getElementById('mini-after');
-            const miniHandle = document.getElementById('mini-handle');
-            if(miniRange && miniAfter && miniHandle) {
-                miniRange.addEventListener('input', (e) => {
-                    const val = e.target.value;
-                    miniAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
-                    miniHandle.style.left = `${val}%`;
-                });
-            }
-
-            // Mobile Hero Slider
-            const mobileRange = document.getElementById('hero-mobile-range');
-            const mobileAfter = document.getElementById('hero-mobile-after');
-            const mobileHandle = document.getElementById('hero-mobile-handle');
-            if(mobileRange && mobileAfter && mobileHandle) {
-                mobileRange.addEventListener('input', (e) => {
-                    const val = e.target.value;
-                    mobileAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
-                    mobileHandle.style.left = `${val}%`;
-                });
-            }
-
-            const sliderRanges = document.querySelectorAll('.comparison-range');
-            sliderRanges.forEach(range => {
-                range.addEventListener('input', (e) => {
-                    const slider = e.target.closest('.comparison-slider');
-                    const afterImage = slider.querySelector('.comparison-after');
-                    const handle = slider.querySelector('.slider-handle');
-                    const value = e.target.value;
-                    afterImage.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-                    handle.style.left = `${value}%`;
-                });
-            });
-        });
-    </script>
     <!-- Whatsapp Floating Icon -->
     <a href="https://wa.me/919717112235" class="whatsapp-float" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
